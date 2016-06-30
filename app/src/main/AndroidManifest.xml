@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shivam.wordbuilder.app" >
+
+
+    <application android:theme="@style/AppTheme"
+        android:supportsRtl="true"
+        android:label="@string/app_name"
+        android:icon="@drawable/download"
+        android:allowBackup="true">
+
+
+    <activity android:name=".WdBuilderActivity">
+
+
+    <intent-filter>
+
+    <action android:name="android.intent.action.MAIN"/>
+
+    <category android:name="android.intent.category.LAUNCHER"/>
+
+</intent-filter>
+
+</activity>
+
+
+    <activity android:theme="@style/AppTheme.NoActionBar"
+        android:label="Animals/Birds"
+        android:name="com.example.shivam.wordbuilder.app.AnimalActivity"
+        android:parentActivityName=".AnimalActivity">
+
+    <meta-data android:name="android.support.PARENT_ACTIVITY"
+        android:value="com.example.shivam.wordbuilder.app.WdBuilderActivity"/>
+
+</activity>
+
+
+    <activity android:theme="@style/AppTheme.NoActionBar"
+        android:label="Countries/Places"
+        android:name="com.example.shivam.wordbuilder.app.CountriesActivity"
+        android:parentActivityName=".CountriesActivity">
+
+    <meta-data android:name="android.support.PARENT_ACTIVITY"
+        android:value="com.example.shivam.wordbuilder.app.WdBuilderActivity"/>
+
+</activity>
+
+
+    <activity android:theme="@style/AppTheme.NoActionBar"
+        android:label="Words"
+        android:name="com.example.shivam.wordbuilder.app.WordsActivity"
+        android:parentActivityName=".WordsActivity">
+
+    <meta-data android:name="android.support.PARENT_ACTIVITY"
+        android:value="com.example.shivam.wordbuilder.app.WdBuilderActivity"/>
+
+</activity>
+
+</application>
+
+</manifest>
